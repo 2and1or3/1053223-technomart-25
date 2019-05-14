@@ -45,10 +45,10 @@
   <main class="page-main">
     <section class="menu-catalog">
       <h2 class="visually-hidden">Меню каталога</h2>
-      <ul class="menu-items">
+      <ul class="menu-top-items">
         <li class="menu-item">
           <h3 class="menu-item-title">Материалы</h3>
-          <p class="menu-item-button"><a href="materials.html">На любой вкус</a></p>
+          <a href="materials.html">На любой вкус</a>
         </li>
         <li class="menu-item">
           <h3 class="menu-item-title">Инструмент</h3>
@@ -58,6 +58,9 @@
           <h3 class="menu-item-title">Техника</h3>
           <p class="menu-item-button"><a href="materials.html">Для стройки</a></p>
         </li>
+      </ul>
+      <ul class="menu-bottom-items">
+
         <li class="menu-item">
           <section class="menu-widget">
            <nav class="widget-nav">
@@ -65,33 +68,41 @@
             <button class="front-arrow" >&gt;</button>
           </nav>
           <article class="menu-slide-1">
-           <h3 class="menu-slide-1-title">Перфораторы</h3>
-           <p class="menu-slide-1-text">Настоящие мужские игрушки</p>
+            <h3 class="menu-slide-title">Перфораторы</h3>
+           <p class="menu-slide-text">Настоящие мужские игрушки</p>
            <img src="img/men-1" alt="Мужчина сверлит стену дрелью" width="620" height="266">
+           <a class="button" href="catalog.html#perforator">Открыть каталог</a>
          </article>
          <article class="menu-slide-2">
-           <h3 class="menu-slide-2-title">Дрели</h3>
-           <p class="menu-slide-2-text">Соседям на радость!</p>
+           <h3 class="menu-slide-title">Дрели</h3>
+           <p class="menu-slide-text">Соседям на радость!</p>
            <img src="img/men-2" alt="Мужчина с перфоратором" width="620" height="266">
+           <a class="button" href="catalog.html#drill">Открыть каталог</a>
          </article>
-         <a class="button" href="catalog.html">Открыть каталог</a>
+
        </section>
      </li>
-     <li class="menu-item">
-      <h3 class="menu-item-title">Скидки 50%</h3>
-      <p class="menu-item-button"><a href="materials.html">На 350 товаров</a></p>
+     <li class="right-box">
+      <ul class="right-box-list">
+        <li class="menu-item">
+          <h3 class="menu-item-title">Скидки 50%</h3>
+          <p class="menu-item-button"><a href="materials.html">На 350 товаров</a></p>
+        </li>
+        <li class="menu-item">
+          <h3 class="menu-item-title">Доставка</h3>
+          <p class="menu-item-button"><a href="materials.html">Бесплатно</a></p>
+        </li>
+      </ul>
     </li>
-    <li class="menu-item">
-      <h3 class="menu-item-title">Доставка</h3>
-      <p class="menu-item-button"><a href="materials.html">Бесплатно</a></p>
-    </li>
+
+
   </ul>
 </section>
 <section class="popular-products">
-  <p class="popular-products-head">
+  <div class="popular-products-head">
     <h2 class="popular-products-title">Популярные товары</h2>
     <a class="button" href="popular-products.html">Все популярные товары</a>
-  </p>
+  </div>
   <ul class="popular-products-list">
     <li class="product-item">
       <h4 class="product-title">
@@ -102,7 +113,7 @@
       <a href="catalog-item.html">
         <img src="img/product-1.jpg" alt="Перфоратор Bosch BFG 9000" width="218" height="170">
       </a>
-      <p class="product-item-sale" >32500 Р.</p>
+      <p class="product-item-sale">32500 Р.</p>
       <a class="product-item-price" href="#">
         25500 Р.
       </a>
@@ -116,7 +127,7 @@
       <a href="catalog-item.html">
         <img src="img/product-1.jpg" alt="Перфоратор Bosch BFG 3000" width="218" height="170">
       </a>
-      <p class="product-item-sale" >22500 Р.</p>
+      <p class="product-item-sale">22500 Р.</p>
       <a class="product-item-price" href="#">
         15500 Р.
       </a>
@@ -130,7 +141,7 @@
       <a href="catalog-item.html">
         <img src="img/product-2.jpg" alt="Перфоратор Bosch BFG 6000" width="218" height="170">
       </a>
-      <p class="product-item-sale" >30500 Р.</p>
+      <p class="product-item-sale">30500 Р.</p>
       <a class="product-item-price" href="#">
         25500 Р.
       </a>
@@ -151,48 +162,48 @@
   </ul>
 </section>
 <section class="popular-brands">
-  <p class="popular-brands-head">
+  <div class="popular-brands-head">
     <h2 class="popular-brands-title">Популярные производители</h2>
     <a class="button" href="popular-brands.html">Все производители</a>
-  </p>
+  </div>
   <ul class="popular-brands-list">
     <li class="brands-item">
-      <a href="bosch.com">
+      <a href="bosch.com" target="_blank">
         <img src="img/bosch.jpg" alt="bosch.com" width="126" height="37">
       </a>
     </li>
     <li class="brands-item">
-      <a href="makita.com">
+      <a href="makita.com" target="_blank">
         <img src="img/makita.jpg" alt="makita.com" width="123" height="40">
       </a>
     </li>
     <li class="brands-item">
-      <a href="dewalt.com">
+      <a href="dewalt.com" target="_blank">
         <img src="img/dewalt.jpg" alt="dewalt.com" width="146" height="44">
       </a>
     </li>
     <li class="brands-item">
-      <a href="interskol.com">
+      <a href="interskol.com" target="_blank">
         <img src="img/interskol.jpg" alt="interskol.com" width="200" height="88">
       </a>
     </li>
     <li class="brands-item">
-      <a href="hitachi.com">
+      <a href="hitachi.com" target="_blank">
         <img src="img/hitachi.jpg" alt="hitachi.com" width="169" height="31">
       </a>
     </li>
     <li class="brands-item">
-      <a href="lg.com">
+      <a href="lg.com" target="_blank">
         <img src="img/lg.jpg" alt="lg.com" width="121" height="73">
       </a>
     </li>
     <li class="brands-item">
-      <a href="aeg.com">
+      <a href="aeg.com" target="_blank">
         <img src="img/aeg.jpg" alt="aeg.com" width="151" height="96">
       </a>
     </li>
     <li class="brands-item">
-      <a href="metabo.com">
+      <a href="metabo.com" target="_blank">
         <img src="img/metabo.jpg" alt="metabo.com" width="204" height="69">
       </a>
     </li>
@@ -209,13 +220,13 @@
     <nav class="features-widget-nav">
       <ul class="widget-nav-list">
         <li class="widget-nav-item">
-          <button class="btn-slide-1">Доставка</button>
+          <button class="btn-slide-1 btn-slide">Доставка</button>
         </li>
         <li class="widget-nav-item">
-          <button class="btn-slide-2">Гарантия</button>
+          <button class="btn-slide-2 btn-slide">Гарантия</button>
         </li>
         <li class="widget-nav-item">
-          <button class="btn-slide-3">Кредит</button>
+          <button class="btn-slide-3 btn-slide">Кредит</button>
         </li>
       </ul>
     </nav>
@@ -253,7 +264,7 @@
 <section class="about-us">
   <h2 class="promo-title">Компания &laquo;Техномарт&raquo;</h2>
   <p class="promo-text">
-    Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для&nbsp; ремонта и&nbsp; строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+    Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для&nbsp;ремонта и&nbsp;строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
   </p>
   <p class="promo-text">
     Мы можем доставить ваш товар в самые отдаленные точки России!
@@ -272,8 +283,8 @@
     Вы можете забрать товар сами,
     Заехав в наш офис:
   </p>
-  <img src="img/map-preview.jpg" alt="г. Санкт-Петербург , ул Б.Конюшенная, дю 19/8" width="300" height="158">
-  <a class="button" >Заблудились? Напишите нам!</a>
+  <img src="img/map-preview.jpg" alt="г. Санкт-Петербург, ул Б.Конюшенная, дю 19/8" width="300" height="158">
+  <a class="button" href="#">Заблудились? Напишите нам!</a>
 </section>
 </main>
 <footer class="page-footer">
