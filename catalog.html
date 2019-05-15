@@ -11,9 +11,9 @@
         <img src="img/logo.jpg" alt="Логотип магазана Техномарт" width="220" height="47">
       </a>
       <p class="header-top-search">Поиск:</p><!-- Поиск это поля для ввода :) -->
-      <p class="header-top-pack"><a href="pack.html">Закладки:</a></p>
-      <p class="header-top-cart"><a href="basket.html">Корзина:</a></p>
-      <p class="header-top-to-cart"><a href="cart.html">Оформить заказ</a></p>
+      <a class="header-top-pack" href="pack.html">Закладки:</a>
+      <a class="header-top-cart" href="basket.html">Корзина:</a>
+      <a class="header-top-to-cart" href="cart.html">Оформить заказ</a>
     </div>
     <div class="header-middle">
       <h1 class="header-title">Интернет-магазин
@@ -54,9 +54,8 @@
     <h2 class="catalog-title">Перфораторы</h2>
     <section class="filters">
       <h3 class="filters-title">Фильтр:</h3>
-
       <!-- Здесь будут фильтры -->
-        <h4 class="filter-price-title">Цена:</h4>
+      <h4 class="filter-price-title">Цена:</h4>
 
       <div class="check-brend">
         <h4 class="check-brend-title">Производители:</h4>
@@ -78,27 +77,27 @@
       <button class="re-filter">Показать</button>
     </section>
     <section class="sort">
-        <h4>Сортировка:</h4>
-        <ul class="sort-list">
-          <li class="sort-item">
-            <a class="sort-button" href="#">По цене</a>
-          </li>
-          <li class="sort-item">
-            <a class="sort-button" href="#">По типу</a>
-          </li>
-          <li class="sort-item">
-            <a class="sort-button" href="#">По функционалу</a>
-          </li>
-        </ul>
-        <ul class="arrow-list">
-          <li class="sort-arrow-item">
-            <button class="btn-up"></button>
-          </li>
-          <li class="sort-arrow-item">
-            <button class="btn-down"></button>
-          </li>
-        </ul>
-      </section>
+      <h3>Сортировка:</h3>
+      <ul class="sort-list">
+        <li class="sort-item">
+          <a class="sort-button" href="#">По цене</a>
+        </li>
+        <li class="sort-item">
+          <a class="sort-button" href="#">По типу</a>
+        </li>
+        <li class="sort-item">
+          <a class="sort-button" href="#">По функционалу</a>
+        </li>
+      </ul>
+      <ul class="arrow-list">
+        <li class="sort-arrow-item">
+          <button class="btn-up"></button>
+        </li>
+        <li class="sort-arrow-item">
+          <button class="btn-down"></button>
+        </li>
+      </ul>
+    </section>
     <section class="catalog">
       <h3 class="visually-hidden">Каталог</h3>
       <ul class="product-list">
@@ -226,7 +225,6 @@
           </a>
         </li>
       </ul>
-
       <ul class="pagination">
         <li class="pagination-item">
           <a href="#">1</a>
@@ -251,21 +249,23 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a href="index.html">
-      <img src="img/logo.jpg" alt="Логотип магазана Техномарт" width="220" height="47">
-    </a>
-    <p class="footer-contacts">
-      г. Санкт-Петербург, ул Б.Конюшенная, д. 19/8
-      +7 (812) 555-05-55
-    </p>
-    <div class="footer-nav">
-      <ul class="main-nav-list">
+    <div class="footer-top">
+      <a href="index.html">
+        <img src="img/logo.jpg" alt="Логотип магазана Техномарт" width="220" height="47">
+      </a>
+      <ul class="footer-top-nav-list">
         <li class="main-nav-item"><a href="company.html">Компания</a></li>
         <li class="main-nav-item"><a href="news.html">Новости</a></li>
-        <li class="main-nav-item"><a href="">Каталог</a></li>
+        <li class="main-nav-item"><a href="catalog.html">Каталог</a></li>
         <li class="main-nav-item"><a href="delivery.html">Доставка</a></li>
         <li class="main-nav-item"><a href="contact.html">Контакты</a></li>
       </ul>
+    </div>
+    <div class="footer-middle">
+      <p class="footer-contacts">
+        г. Санкт-Петербург, ул Б.Конюшенная, д. 19/8
+        +7 (812) 555-05-55
+      </p>
       <ul class="nav-catalog">
         <li class="nav-catalog-item"><a href="catalog.html#materials">Материалы</a></li>
         <li class="nav-catalog-item"><a href="catalog.html#techno">Техника</a></li>
