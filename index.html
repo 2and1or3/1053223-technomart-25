@@ -10,7 +10,7 @@
       <a href="">
         <img src="img/logo.svg" alt="Логотип магазана Техномарт" width="220" height="47">
       </a>
-      <p class="header-top-search">Поиск:</p><!-- Поиск это поля для ввода :) -->
+      <input type="search" placeholder="Поиск:" name="search">
       <a class="header-top-pack" href="pack.html">Закладки:</a>
       <a class="header-top-cart" href="basket.html">Корзина:</a>
       <a class="header-top-to-cart" href="cart.html">Оформить заказ</a>
@@ -327,5 +327,31 @@
     </p>
   </div>
 </footer>
+<section class="modal modal-map">
+  <button class="close">X</button>
+  <img src="img/map-b.png" width="940" height="446" alt="г. Санкт-Петербург, ул Б.Конюшенная, д. 19/8">
+</section>
+<section class="modal modal-letter">
+  <form action="https://echo.htmlacademy.ru" method="get">
+    <button class="close">X</button>
+    <div class="white-space">
+      <label>
+        Ваше имя:
+        <input type="text" placeholder="Имя Фамилия" name="name">
+      </label>
+      <label>
+        Ваш e-mail:
+        <input type="email" placeholder="email@example.com" name="name">
+      </label>
+      <label>
+        Текст письма:
+        <textarea name="text" placeholder="В свободной форме"></textarea>
+      </label>
+    </div>
+    <div class="grey-space">
+      <button type="submit" >Отправить</button>
+    </div>
+  </form>
+</section>
 </body>
 </html>

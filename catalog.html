@@ -10,7 +10,7 @@
       <a href="index.html">
         <img src="img/logo.svg" alt="Логотип магазана Техномарт" width="220" height="47">
       </a>
-      <p class="header-top-search">Поиск:</p><!-- Поиск это поля для ввода :) -->
+      <input type="search" placeholder="Поиск:" name="search">
       <a class="header-top-pack" href="pack.html">Закладки:</a>
       <a class="header-top-cart" href="basket.html">Корзина:</a>
       <a class="header-top-to-cart" href="cart.html">Оформить заказ</a>
@@ -52,30 +52,70 @@
       <li class="breadcrumbs-item breadcrumbs-item-current"><a href="tool.html#perf">Перфораторы</a></li>
     </ul>
     <h2 class="catalog-title">Перфораторы</h2>
-    <section class="filters">
+    <form class="filters" action="https://echo.htmlacademy.ru" method="get">
       <h3 class="filters-title">Фильтр:</h3>
-      <!-- Здесь будут фильтры -->
-      <h4 class="filter-price-title">Цена:</h4>
-
-      <div class="check-brend">
-        <h4 class="check-brend-title">Производители:</h4>
+      <fieldset class="filter-price">
+        <legend class="filter-price-title">Цена:</legend>
+        <div class="range">
+        </div>
+        <p class="min">0</p>
+        <span> - </span>
+        <p class="max">30000</p>
+      </fieldset>
+      <fieldset class="check-brend">
+        <legend class="check-brend-title">Производители:</legend>
         <ul class="brend-list">
-          <li class="brend-item">Bosch</li><!-- Добавить checkbox-on.svg -->
-          <li class="brend-item">Интерскол</li><!-- Добавить checkbox-off.svg -->
-          <li class="brend-item">Makita</li><!-- Добавить checkbox-on.svg -->
-          <li class="brend-item">dewalt</li><!-- Добавить checkbox-off.svg -->
-          <li class="brend-item">hitachi</li><!-- Добавить checkbox-off.svg -->
+          <li class="brend-item">
+            <label>
+              <input type="checkbox" name="Bosch" checked="">
+              Bosch
+            </label>
+          </li><!-- Добавить checkbox-on.svg -->
+          <li class="brend-item">
+            <label>
+              <input type="checkbox" name="Interscol">
+              Интерскол
+            </label>
+          </li><!-- Добавить checkbox-off.svg -->
+          <li class="brend-item">
+            <label>
+              <input type="checkbox" name="Makita" checked="">
+              Makita
+            </label>
+          </li><!-- Добавить checkbox-on.svg -->
+          <li class="brend-item">
+            <label>
+              <input type="checkbox" name="dewalt">
+              dewalt
+            </label>
+          </li><!-- Добавить checkbox-off.svg -->
+          <li class="brend-item">
+            <label>
+              <input type="checkbox" name="hitachi">
+              hitachi
+            </label>
+          </li><!-- Добавить checkbox-off.svg -->
         </ul>
-      </div>
-      <div class="check-type">
-        <h4 class="check-type-title">Питание:</h4>
+      </fieldset>
+      <fieldset class="check-type">
+        <legend class="check-type-title">Питание:</legend>
         <ul class="type-list">
-          <li class="type-item">Аккумуляторные</li><!-- Добавить radio-on.svg -->
-          <li class="type-item">Сетевые</li><!-- Добавить radio-off.svg -->
+          <li class="type-item">
+            <label>
+              <input type="radio" name="feed" value="type-1" checked>
+              Аккумуляторные
+            </label>
+          </li><!-- Добавить radio-on.svg -->
+          <li class="type-item">
+            <label>
+              <input type="radio" name="feed" value="type-2">
+              Сетевые
+            </label>
+          </li><!-- Добавить radio-off.svg -->
         </ul>
-      </div>
-      <button class="re-filter">Показать</button>
-    </section>
+      </fieldset>
+      <button class="re-filter" type="submit">Показать</button>
+    </form>
     <section class="sort">
       <h3>Сортировка:</h3>
       <ul class="sort-list">
@@ -293,5 +333,15 @@
       </p>
     </div>
   </footer>
+  <section class="modal modal-cart">
+    <div class="white-space">
+      <button class="close">X</button>
+      <p class="good-alert">Товар добавлен в корзину!</p>
+    </div>
+    <div class="grey-space">
+      <a class="button" href="cart.html">Оформить заказ</a>
+      <button class="next-close">Продолжить покупки</button>
+    </div>
+  </section>
 </body>
 </html>
