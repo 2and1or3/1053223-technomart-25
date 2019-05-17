@@ -10,7 +10,10 @@
       <a href="index.html">
         <img src="img/logo.svg" alt="Логотип магазана Техномарт" width="220" height="47">
       </a>
-      <input type="search" placeholder="Поиск:" name="search">
+      <label class="visually-hidden">
+        Поиск
+        <input type="search" placeholder="Поиск:" name="search">
+      </label>
       <a class="header-top-pack" href="pack.html">Закладки:</a>
       <a class="header-top-cart" href="basket.html">Корзина:</a>
       <a class="header-top-to-cart" href="cart.html">Оформить заказ</a>
@@ -131,10 +134,10 @@
       </ul>
       <ul class="arrow-list">
         <li class="sort-arrow-item">
-          <button class="btn-up"></button>
+          <button class="btn-up" aria-label="Отсортировать по возрастанию"></button>
         </li>
         <li class="sort-arrow-item">
-          <button class="btn-down"></button>
+          <button class="btn-down" aria-label="Отсортировать по убыванию"></button>
         </li>
       </ul>
     </section>
@@ -265,7 +268,7 @@
           </a>
         </li>
       </ul>
-      <ul class="pagination">
+      <ul class="pagination" aria-label="Страницы каталога">
         <li class="pagination-item">
           <a href="#">1</a>
         </li>
@@ -319,13 +322,13 @@
         Все права защищены
       </p>
       <ul class="social-list"><!-- Добавить vk-icon.svg insta-icon.svg fb-icon.svg -->
-        <li class="social-list-item"><a href="vk">Vkontacte</a></li>
-        <li class="social-list-item"><a href="fb">FaceBook</a></li>
-        <li class="social-list-item"><a href="ins">Instagramm</a></li>
+        <li class="social-list-item"><a href="vk" aria-label="Наша страница в контакте">Vkontacte</a></li>
+        <li class="social-list-item"><a href="fb" aria-label="Наша страница в фейсбуке">FaceBook</a></li>
+        <li class="social-list-item"><a href="ins" aria-label="Наша страница в инстаграмме">Instagramm</a></li>
       </ul>
       <p class="feed">
         <b>Обратная связь:</b>
-        <span class="feed-mail"><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+        <span class="feed-mail"><a href="mail@htmlacademy.ru" aria-label="Вы можете связаться с нами по почте">mail@htmlacademy.ru</a></span>
       </p>
       <p class="author">
         <b>Разработанно -</b>
@@ -335,7 +338,7 @@
   </footer>
   <section class="modal modal-cart">
     <div class="white-space">
-      <button class="close">X</button>
+      <button class="close" aria-label="Закрыть окно">X</button>
       <p class="good-alert">Товар добавлен в корзину!</p>
     </div>
     <div class="grey-space">
