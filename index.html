@@ -10,7 +10,10 @@
       <a href="">
         <img src="img/logo.svg" alt="Логотип магазана Техномарт" width="220" height="47">
       </a>
-      <input type="search" placeholder="Поиск:" name="search">
+      <label class="visually-hidden">
+        Поиск
+        <input type="search" placeholder="Поиск:" name="search">
+      </label>
       <a class="header-top-pack" href="pack.html">Закладки:</a>
       <a class="header-top-cart" href="basket.html">Корзина:</a>
       <a class="header-top-to-cart" href="cart.html">Оформить заказ</a>
@@ -62,8 +65,8 @@
         <li class="menu-item">
           <section class="menu-widget"><!--Добавить icon-left.svg icon-right.svg  -->
            <nav class="widget-nav">
-            <button class="back-arrow">&lt;</button>
-            <button class="front-arrow">&gt;</button>
+            <button class="back-arrow" aria-label="Предыдущий слайд">&lt;</button>
+            <button class="front-arrow" aria-label="Следующий слайд">&gt;</button>
           </nav>
           <article class="menu-slide-1">
             <h3 class="menu-slide-title">Дрели</h3>
@@ -328,12 +331,12 @@
   </div>
 </footer>
 <section class="modal modal-map">
-  <button class="close">X</button>
+  <button class="close" aria-label="Скрыть карту">X</button>
   <img src="img/map-b.png" width="940" height="446" alt="г. Санкт-Петербург, ул Б.Конюшенная, д. 19/8">
 </section>
 <section class="modal modal-letter">
   <form action="https://echo.htmlacademy.ru" method="get">
-    <button class="close">X</button>
+    <button class="close" aria-label="Закрыть форму письма">X</button>
     <div class="white-space">
       <label>
         Ваше имя:
