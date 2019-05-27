@@ -305,7 +305,7 @@ a {
 }
 
 .product-title {
-  margin: 0 0 18px 0;
+  margin: 0 20px 18px 20px;
   padding: 0;
   text-align: center;
   font-size: 18px;
@@ -627,13 +627,32 @@ label input, textarea {
 }
 
 /* Каталог */
+.page-header.page-catalog-header {
+  margin-bottom: 25px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+}
+
 .user-name {
+  margin: 0;
+  padding: 14px 69px 11px 47px;
   font-size: 21px;
   line-height: 21px;
   background-color: #ffffff;
 }
 
+.user-name+.user-nav {
+  padding: 0;
+  margin: 13px 0 4px 0;
+  justify-content: center;
+}
+
 .user-name+.user-nav li {
+  padding: 0;
+  margin: 0 30px 0 0;
   background-color: #f4f7f9;
   color: #32425c;
   font-size: 16px;
@@ -643,30 +662,103 @@ label input, textarea {
 
 .page-catalog {
   font-family: "PT-Sans", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0 0 25px 0;
+  padding: 0;
   font-size: 13px;
   line-height: 18px;
 }
 
+.breadcrumbs-item {
+  padding-right: 15px;
+}
+
 .catalog-title {
+  margin: 0 0 20px 0;
+  padding: 32px 740px 34px 30px;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
 }
 
+.main-container {
+  display: flex;
+}
+
+.filters {
+  margin: 0 20px 0 0;
+  width: 220px;
+  padding: 0;
+  flex-grow: 1;
+}
+
 .filters-title {
+  margin: 0 0 20px 0;
+  padding: 14px 149px 15px 18px;
   font-size: 13px;
   line-height: 18px;
   background-color: #f7f3ec;
 }
 
+.filters fieldset {
+  padding: 0 0 25px 0;
+  margin: 0 0 25px 0;
+  border: none;
+  border-bottom: 1px solid #f7f3ec;
+}
+
+.filters fieldset:last-of-type {
+  border: none;
+}
+
+.range {
+  margin-bottom: 10px;
+  background-color: #f7f3ec;
+  /* width: 220px; */
+  flex-grow: 1;
+  height: 80px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.min {
+  margin: 0;
+  padding: 14px 40px 14px 46px;
+  background-color: #f7f3ec;
+}
+
+.max {
+  margin: 0;
+  padding: 14px 24px 14px 26px;
+  background-color: #f7f3ec;
+}
+
 legend {
+  padding: 0;
+  margin: 0 0 25px 0;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+}
+
+.brend-item,
+.type-item {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.brend-item:last-child,
+.type-item :last-child {
+  margin: 0;
 }
 
 .filters label {
@@ -675,15 +767,45 @@ legend {
 }
 
 .re-filter {
+  padding: 15px 39px 14px 39px;
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 60px;
+}
+
 .sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  background-color: #f7f3ec;
   font-size: 13px;
   line-height: 18px;
+}
+
+.sort-title {
+  margin: 14px 0 15px 19px;
+  padding: 0;
+}
+
+.sort-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-item {
+  padding-right: 65px;
 }
 
 .sort-button {
@@ -701,27 +823,77 @@ legend {
 }
 
 .product-list {
+  margin: 0 0 50px 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   font-weight: bold;
+  text-transform: none;
+}
+
+.product-list .product-item {
+  width: 218px;
+  margin: 0 20px 20px 0;
+  display: flex;
+}
+
+.product-list .product-item:nth-child(3n) {
+  margin: 0 0 20px 0;
+}
+
+.product-picture {
+  order: -1;
+  margin-bottom: 12px;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .pagination-item {
+  padding: 14px 19px;
+  margin-right: 10px;
   font-size: 13px;
   line-height: 18px;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
   background-color: #ffffff;
+}
+
+.pagination-item:last-child {
+  padding: 14px 32px 13px 32px;
+  margin: 0;
 }
 
 .pagination-active {
   background-color: #ee3643;
 }
 
+.post-script-wrap {
+  width: 100%;
+  background-color: #f4f7f9;
+}
+
+.post-script {
+  padding: 70px 0;
+  margin: 0;
+}
+
 .post-script-title {
+  padding: 0;
+  margin: 0 0 35px 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
 
 .post-script-text {
+  padding: 0;
+  margin: 0;
+  text-transform: none;
   font-size: 13px;
   line-height: 24px;
 }
