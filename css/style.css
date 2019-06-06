@@ -506,6 +506,7 @@ a.header-top-cart {
   border: 2px solid #ffffff;
   background-color: #ffffff;
   border-radius: 50%;
+  z-index:1;
 }
 
 .circle-button-current {
@@ -631,6 +632,90 @@ a.header-top-cart {
   text-align: center;
 }
 
+.product-item:hover .product-picture {
+  display: none;
+}
+
+.button-block {
+  display: none;
+  width: 218px;
+  margin: 47px 0 49px 0;
+}
+
+.product-item:hover .button-block {
+  display: block;
+}
+
+.item-buttons-list {
+  margin: 0 0 0 42px;
+  padding: 0;
+  list-style: none;
+}
+
+.item-button {
+  margin-bottom: 7px;
+}
+
+.button-link {
+  position: relative;
+  display: block;
+  width: 115px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: #63a63e;
+  font-weight: normal;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.button-to-cart {
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.button-to-cart::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
+  opacity: 0.3;
+}
+
+.button-to-cart:hover::before,
+.button-to-cart:active::before {
+  opacity: 1;
+}
+
+.button-to-cart:hover {
+  background-color: #5fbb2d;
+}
+
+.button-to-cart:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.button-to-mark {
+  padding: 7px;
+  background-color: #ffffff;
+  color: #32425c;
+  border: solid 3px #63a63e;
+}
+
+.button-to-mark:hover {
+  border-color: #32425c;
+}
+
+.button-to-mark:active {
+  opacity: 0.3;
+}
+
 .product-title {
   margin: 0 20px 13px 20px;
   padding: 0;
@@ -639,7 +724,7 @@ a.header-top-cart {
   line-height: 20px;
 }
 
-.popular-product-picture {
+.product-picture {
   margin-bottom: 5px;
   display: block;
 }
@@ -1545,15 +1630,6 @@ legend {
 
 .product-list .product-item:nth-child(3n) {
   margin: 0 0 20px 0;
-}
-
-.product-picture {
-  order: -1;
-  margin-bottom: 5px;
-}
-
-.product-title+.product-picture+.product-item-price {
-  margin-top: 26px;
 }
 
 .pagination {
