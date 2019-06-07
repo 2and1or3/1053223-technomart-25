@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -49,7 +49,7 @@
           и&nbsp;инструментов для ремонта
         </h1>
         <div class="header-contacts">
-          <a class="contact-phone" href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+          <a class="contact-phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
 
           <p class="contact-address">г. Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
         </div>
@@ -387,7 +387,10 @@
             Вы&nbsp;можете забрать товар сами,
             заехав в&nbsp;наш офис:
           </p>
-          <img src="img/map-s.png" alt="г. Санкт-Петербург, ул Б.Конюшенная, дю 19/8" width="300" height="158">
+          <a
+            href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">
+            <img src="img/map-s.png" alt="г. Санкт-Петербург, ул Б.Конюшенная, дю 19/8" width="300" height="158">
+          </a>
           <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
@@ -425,8 +428,8 @@
       <div class="container">
         <div class="footer-bottom">
           <div class="copyright">
-            <p>&#169; 2010–2019 Компания &laquo;Техномарт&raquo;</o>
-              <p>Все права защищены</p>
+            <p>&#169; 2010–2019 Компания &laquo;Техномарт&raquo;</p>
+            <p>Все права защищены</p>
           </div>
           <ul class="social-list">
             <li class="social-list-item">
@@ -447,11 +450,11 @@
           </ul>
           <div class="links-to-us">
             <p class="feed">
-              <span>Обратная связь:</span>
+              <span class="feed-title">Обратная связь:</span>
               <span class="feed-mail"><a href="mailto:mail@htmlacademy.ru" aria-label="Вы можете связаться с нами по почте">mail@htmlacademy.ru</a></span>
             </p>
             <p class="author">
-              <span>Разработано&nbsp;—</span>
+              <span class="author-title">Разработано&nbsp;—</span>
               <span class="author-name"><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
             </p>
           </div>
@@ -477,7 +480,7 @@
             <input class="letter-mail" type="email" placeholder="email@example.com" name="name">
           </label>
         </div>
-        <label>
+        <label class="letter-box-text">
           <span class="letter-title">Текст письма:</span>
           <textarea class="letter-text" name="text" placeholder="В свободной форме" rows="6"></textarea>
         </label>

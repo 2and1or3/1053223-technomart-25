@@ -184,6 +184,7 @@ a.header-top-cart {
   width: 200px;
   font-style: italic;
   font-size: 16px;
+  font-weight: normal;
   line-height: 23px;
   color: #ee3643;
 }
@@ -551,6 +552,7 @@ a.header-top-cart {
   background-color: #ee3643;
   text-transform: uppercase;
   color: #ffffff;
+  line-height: 18px;
 }
 
 .widget-slide-button {
@@ -731,7 +733,7 @@ a.header-top-cart {
 .product-item-sale {
   margin: 0 0 8px 0;
   padding: 0;
-  color: #a9a9a9;
+  color: #999999;
   font-size: 17px;
   line-height: 18px;
   text-decoration: line-through;
@@ -1019,7 +1021,7 @@ a.header-top-cart {
 
 .page-footer {
   width: 100%;
-  color: #ffffff;
+  color: #f1f5f7;
   background-color: #32425c;
 }
 
@@ -1075,7 +1077,7 @@ a.header-top-cart {
 }
 
 .nav-catalog-item {
-  color: #ffda96;
+  color: #ffd180;
   margin-right: 60px;
 }
 
@@ -1098,6 +1100,7 @@ a.header-top-cart {
 }
 
 .copyright {
+  color: #ffffff;
   padding: 0;
   margin: 0 161px 0 0;
 }
@@ -1166,6 +1169,10 @@ a.header-top-cart {
   padding: 0;
 }
 
+.feed-title {
+  color: #ffffff;
+}
+
 .feed-mail {
   color: #ffda96;
   display: block;
@@ -1175,6 +1182,10 @@ a.header-top-cart {
   margin: 0;
   padding: 0;
   margin-right: 11px;
+}
+
+.author-title {
+  color: #ffffff;
 }
 
 .author-name {
@@ -1190,8 +1201,8 @@ a.header-top-cart {
 label input, textarea {
   font-size: 13px;
   line-height: 18px;
-  color: #a9a9a9;
-  border: 2px solid #dee3e4;
+  color: #999999;
+  border: 2px solid #d7dcde;
 }
 
 .grey-space {
@@ -1203,7 +1214,11 @@ label input, textarea {
   margin-bottom: 20px;
 }
 
-.page-catalog-header .header-top-cart {
+.header-top-cart-active {
+  background-color: #ee3643;
+}
+
+.header-top-pack-active {
   background-color: #ee3643;
 }
 
@@ -1970,12 +1985,14 @@ legend {
   width: 190px;
   padding: 10px 15px;
   border-radius: 3px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .letter-mail {
   width: 190px;
   padding: 10px 15px;
   border-radius: 3px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .letter-text {
@@ -1984,6 +2001,7 @@ legend {
   padding: 10px;
   border-radius: 3px;
   resize: none;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .letter-button {
@@ -1991,6 +2009,19 @@ legend {
   width: 100%;
   border: none;
   border-radius: 3px;
+}
+
+.letter-box-name:hover .letter-name,
+.letter-box-mail:hover .letter-mail,
+.letter-box-text:hover .letter-text {
+  border-color: #b5b5b5;
+}
+
+.letter-box-name .letter-name:focus,
+.letter-box-mail .letter-mail:focus,
+.letter-box-text .letter-text:focus {
+  outline: none;
+  border-color: #ee3643;
 }
 
 .close {
@@ -2046,6 +2077,7 @@ legend {
   border: none;
   background-color: #ffffff;
   border-radius: 3px;
+  line-height: 18px;
 }
 
 .fixme-1::before {
