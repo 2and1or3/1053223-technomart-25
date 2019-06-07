@@ -346,6 +346,7 @@ a.header-top-cart {
 }
 
 .icon-1::after {
+  margin-left: 15px;
   width: 44px;
   height: 65px;
   background: url("../img/icon-1.svg") no-repeat 0 0;
@@ -358,18 +359,22 @@ a.header-top-cart {
 }
 
 .icon-3::after {
+  margin-left: -7px;
   width: 78px;
   height: 62px;
   background: url("../img/icon-3.svg") no-repeat 0 0;
 }
 
 .icon-4::after {
+  margin-left: -2px;
+  margin-top: -4px;
   width: 59px;
   height: 72px;
   background: url("../img/icon-4.svg") no-repeat 0 0;
 }
 
 .icon-5::after {
+  margin-left: -7px;
   width: 78px;
   height: 63px;
   background: url("../img/icon-5.svg") no-repeat 0 0;
@@ -428,19 +433,16 @@ a.header-top-cart {
 }
 
 .widget-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   z-index: 1;
 }
 
 .back-arrow {
-  transform: translate(31px, -13px);
   border: 0;
   background: transparent;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
   width: 30px;
   height: 30px;
 }
@@ -458,10 +460,10 @@ a.header-top-cart {
 }
 
 .front-arrow {
-  transform: translate(594px, -13px);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
   width: 30px;
   height: 30px;
   border: 0;
@@ -485,7 +487,7 @@ a.header-top-cart {
   padding: 0;
   list-style: none;
   position: absolute;
-  top: 80%;
+  bottom: 34px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -502,11 +504,11 @@ a.header-top-cart {
 .circle-button {
   width: 10px;
   height: 10px;
-  padding: 3.5px;
+  padding: 0;
   border: 2px solid #ffffff;
   background-color: #ffffff;
   border-radius: 50%;
-  z-index:1;
+  z-index: 1;
 }
 
 .circle-button-current {
@@ -636,19 +638,15 @@ a.header-top-cart {
   display: none;
 }
 
-.button-block {
-  display: none;
-  width: 218px;
-  margin: 47px 0 49px 0;
-}
-
-.product-item:hover .button-block {
+.product-item:hover .item-buttons-list {
   display: block;
 }
 
 .item-buttons-list {
-  margin: 0 0 0 42px;
-  padding: 0;
+  display: none;
+  width: 218px;
+  margin: 0;
+  padding: 45px 0 44px 0;
   list-style: none;
 }
 
@@ -660,6 +658,7 @@ a.header-top-cart {
   position: relative;
   display: block;
   width: 115px;
+  margin: 0 auto;
   padding: 10px;
   text-align: center;
   font-size: 14px;
@@ -742,13 +741,16 @@ a.header-top-cart {
   position: relative;
   display: block;
   margin-bottom: 20px;
-  padding: 10px 28px;
+  padding: 10px 22px 10px 33px;
+  margin-left: -10px;
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 3px 0 0 3px;
   font-size: 17px;
   line-height: 18px;
 }
+
+.price {}
 
 .product-item-price::after {
   content: "";
@@ -796,7 +798,7 @@ a.header-top-cart {
 }
 
 .features-container {
-  padding-bottom: 102px;
+  padding-bottom: 98px;
 }
 
 .features-title {
@@ -852,8 +854,14 @@ a.header-top-cart {
   font-weight: bold;
   text-align: left;
   border: none;
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
   display: block;
   width: 100%;
+}
+
+.btn-slide.features-active {
+  border: none;
 }
 
 .features-slide-title {
@@ -1154,7 +1162,7 @@ a.header-top-cart {
 }
 
 .feed {
-  margin: 0 50px 0 0;
+  margin: 0 51px 0 0;
   padding: 0;
 }
 
@@ -1166,7 +1174,7 @@ a.header-top-cart {
 .author {
   margin: 0;
   padding: 0;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .author-name {
@@ -1293,7 +1301,7 @@ label input, textarea {
   margin-right: 40px;
 }
 
-.breadcrumbs-item:not(:first-child)::before {
+.breadcrumbs-item::before {
   content: "";
   position: absolute;
   top: 3px;
@@ -1305,6 +1313,10 @@ label input, textarea {
 
 .breadcrumbs-item:first-child {
   margin-right: 42px;
+}
+
+.breadcrumbs-item:first-child::before {
+  content: none;
 }
 
 .home {
@@ -1342,6 +1354,7 @@ label input, textarea {
   line-height: 18px;
   background-color: #f7f3ec;
   font-weight: normal;
+  border-radius: 3px;
 }
 
 .filters fieldset {
@@ -1362,6 +1375,7 @@ label input, textarea {
   width: 220px;
   flex-grow: 1;
   height: 80px;
+  border-radius: 3px;
 }
 
 .line {
@@ -1383,11 +1397,11 @@ label input, textarea {
 
 .circle {
   position: absolute;
-  padding: 2px;
+  padding: 0;
   top: 31px;
   left: 20px;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1415,6 +1429,7 @@ label input, textarea {
   line-height: 18px;
   text-align: center;
   border: none;
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
@@ -1429,6 +1444,7 @@ label input, textarea {
   line-height: 18px;
   text-align: center;
   border: none;
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
@@ -1526,11 +1542,12 @@ legend {
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
+  border-radius: 3px;
   background-color: #ffffff;
 }
 
 .content-container {
-  padding-bottom: 71px;
+  padding-bottom: 59px;
 }
 
 .sort {
@@ -1543,6 +1560,7 @@ legend {
   background-color: #f7f3ec;
   font-size: 13px;
   line-height: 18px;
+  border-radius: 3px;
 }
 
 .sort-title {
@@ -1599,6 +1617,10 @@ legend {
   fill: #231F20;
 }
 
+.btn-up.active:hover path {
+  fill: #ee3643;
+}
+
 .btn-down {
   width: 11px;
   height: 10px;
@@ -1610,6 +1632,10 @@ legend {
 
 .btn-down:hover path {
   fill: #231F20;
+}
+
+.btn-down.active:hover path {
+  fill: #ee3643;
 }
 
 .product-list {
@@ -1793,6 +1819,11 @@ legend {
   border-bottom: 1px solid #ee3643;
 }
 
+.sort-button.sort-active:hover {
+  color: #ee3643;
+  border-bottom: none;
+}
+
 .product-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -1801,6 +1832,12 @@ legend {
   border: 1px solid #bdc6ca;
   background-color: #ffffff;
   color: #000000;
+}
+
+.pagination-item.pagination-active a:hover {
+  border: 1px solid #e5e5e5;
+  background-color: #ee3643;
+  color: #ffffff;
 }
 
 .pagination-item a:active {
@@ -1818,6 +1855,11 @@ legend {
 }
 
 .features-active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.features-active:hover {
   background-color: #ffffff;
   color: #32425c;
 }
@@ -1851,27 +1893,33 @@ legend {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -141px;
-  margin-left: -310px;
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
   box-shadow: inset 0 7px 0 0 #ee3643,
     0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-map {
-  top: 30px;
-  margin-left: -470px;
-  margin-top: 0;
   width: 940px;
 }
 
 .modal-letter {
-  top: 500px;
   margin-top: 0;
+}
+
+.modal-letter-content {
+  padding: 50px 80px 35px 80px;
+}
+
+.modal-bottom-content {
+  padding: 30px 80px;
 }
 
 .white-space {
   position: relative;
+}
+
+.modal-head-alert {
   padding: 70px 20px;
 }
 
@@ -1907,14 +1955,6 @@ legend {
   border-bottom: 7px solid #ffffff;
 }
 
-.modal-letter .white-space {
-  padding: 50px 80px 35px 80px;
-}
-
-.modal-letter .grey-space {
-  padding: 30px 80px;
-}
-
 .white-space-contact {
   display: flex;
   justify-content: space-between;
@@ -1943,6 +1983,7 @@ legend {
   box-sizing: border-box;
   padding: 10px;
   border-radius: 3px;
+  resize: none;
 }
 
 .letter-button {
@@ -1960,6 +2001,7 @@ legend {
   height: 25px;
   border: 0;
   background-color: transparent;
+  z-index: 1;
 }
 
 .close::before,
@@ -1983,8 +2025,11 @@ legend {
 }
 
 .grey-space {
-  padding: 40px 80px;
   white-space: nowrap;
+}
+
+.modal-bottom-alert {
+  padding: 40px 80px;
 }
 
 .grey-space .button {
@@ -2001,4 +2046,8 @@ legend {
   border: none;
   background-color: #ffffff;
   border-radius: 3px;
+}
+
+.fixme-1::before {
+  left: -28px;
 }
