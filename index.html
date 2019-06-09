@@ -106,13 +106,13 @@
               </nav>
               <ul class="widget-circle-nav">
                 <li class="circle-item">
-                  <button class="circle-button"></button>
+                  <button class="circle-button  circle-button-current"></button>
                 </li>
                 <li class="circle-item">
-                  <button class="circle-button circle-button-current"></button>
+                  <button class="circle-button"></button>
                 </li>
               </ul>
-              <article class="menu-slide-1 menu-slide">
+              <article class="menu-slide-1 menu-slide slide-menu-show">
                 <div class="widget-content-box">
                   <h3 class="menu-slide-title">Дрели</h3>
                   <p class="menu-slide-text">Соседям на&nbsp;радость!</p>
@@ -387,9 +387,9 @@
             Вы&nbsp;можете забрать товар сами,
             заехав в&nbsp;наш офис:
           </p>
-          <a
+          <a class="button-map"
             href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387192,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">
-            <img src="img/map-s.png" alt="г. Санкт-Петербург, ул Б.Конюшенная, дю 19/8" width="300" height="158">
+            <img src="img/map-s.png" alt="г. Санкт-Петербург, ул Б.Конюшенная, д. 19/8" width="300" height="158">
           </a>
           <a class="button contacts-button" href="#">Заблудились? Напишите нам!</a>
         </section>
@@ -464,10 +464,15 @@
   </footer>
   <section class="modal modal-map">
     <button class="close" aria-label="Скрыть карту" type="button">X</button>
-    <img src="img/map-b.png" width="940" height="446" alt="г. Санкт-Петербург, ул Б.Конюшенная, д. 19/8">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560024187850!5m2!1sru!2sru"
+      width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p>
+      <img src="img/map-b.png" width="940" height="446" alt="г. Санкт-Петербург, ул Б.Конюшенная, д. 19/8">
+    </p>
   </section>
   <section class="modal modal-letter">
-    <form action="https://echo.htmlacademy.ru" method="get">
+    <form class="letter-form" action="https://echo.htmlacademy.ru" method="get">
       <button class="close" aria-label="Закрыть форму письма" type="button"></button>
       <div class="white-space modal-letter-content">
         <div class="white-space-contact">
@@ -477,7 +482,7 @@
           </label>
           <label class="letter-box-mail">
             <span class="letter-title">Ваш e-mail:</span>
-            <input class="letter-mail" type="email" placeholder="email@example.com" name="name">
+            <input class="letter-mail" type="email" placeholder="email@example.com" name="email">
           </label>
         </div>
         <label class="letter-box-text">
@@ -490,6 +495,7 @@
       </div>
     </form>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
