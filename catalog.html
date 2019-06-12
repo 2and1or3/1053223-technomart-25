@@ -5,13 +5,12 @@
   <title>Техномарт-каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header page-catalog-header">
     <div class="header-top-wrap">
       <div class="header-top container">
-
         <a class="logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип магазана Техномарт" width="109" height="19">
         </a>
@@ -23,7 +22,6 @@
               d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
         </label>
-
         <a class="header-top-pack" href="pack.html">
           <svg class="pack" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
             <path fill="#E72C2D" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
@@ -39,7 +37,6 @@
           Корзина: 10
         </a>
         <a class="header-top-to-cart" href="cart.html">Оформить заказ</a>
-
       </div>
     </div>
     <div class="container">
@@ -54,14 +51,14 @@
         </div>
         <section class="user">
           <p class="user-name">
-            <a class="to-profile" href="profile.html">
+            <a class="to-profile" href="profile.html" aria-label="Открыть профиль">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                 <path fill="#c5c5c5"
                   d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
               </svg>
               Равшан Джамшутович
             </a>
-            <a class="logout" href="logout.html">
+            <a class="logout" href="logout.html" aria-label="Выйти из профиля">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                 <g fill="#c5c5c5">
                   <path d="M21 8.5L12.125 0v6h-6v5h6v6z" />
@@ -95,7 +92,7 @@
         <li class="breadcrumbs-item"><a class="home" href="index.html" aria-label="На главную"></a></li>
         <li class="breadcrumbs-item fixme-1"><a href="">Каталог</a></li>
         <li class="breadcrumbs-item"><a href="tool.html">Инструмент</a></li>
-        <li class="breadcrumbs-item breadcrumbs-item-current"><a href="#">Перфораторы</a></li>
+        <li class="breadcrumbs-item breadcrumbs-item-current"><a>Перфораторы</a></li>
       </ul>
       <h2 class="catalog-title">Перфораторы</h2>
       <div class="main-container">
@@ -106,8 +103,8 @@
             <div class="range">
               <span class="line line-grey"></span>
               <span class="line line-green"></span>
-              <button class="circle circle-left" type="button"></button>
-              <button class="circle circle-right" type="button"></button>
+              <button class="circle circle-left" type="button" aria-label="Минимальная цена"></button>
+              <button class="circle circle-right" type="button" aria-label="Максимальная цена"></button>
             </div>
             <div class="input">
               <input class="min" type="text" value="0">
@@ -196,7 +193,6 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                     <path fill="#c5c5c5" d="M5.5 0L0 10h11z" />
                   </svg>
-
                 </a>
               </li>
               <li class="sort-arrow-item">
@@ -212,7 +208,7 @@
             <h3 class="visually-hidden">Каталог</h3>
             <ul class="product-list">
               <li class="product-item" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-2k3k.jpg" alt="Перфоратор Bosch BFG 3000" width="218" height="170">
                   </a>
@@ -238,11 +234,10 @@
                 </div>
               </li>
               <li class="product-item" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-6k.jpg" alt="Перфоратор Bosch BFG 6000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -251,7 +246,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 6000
@@ -266,11 +260,10 @@
                 </div>
               </li>
               <li class="product-item new-flag" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-2k3k.jpg" alt="Перфоратор Bosch BFG 2000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -279,7 +272,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 2000
@@ -293,11 +285,10 @@
                 </div>
               </li>
               <li class="product-item" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-2k3k.jpg" alt="Перфоратор Bosch BFG 3000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -306,7 +297,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 3000
@@ -321,11 +311,10 @@
                 </div>
               </li>
               <li class="product-item new-flag" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-6k.jpg" alt="Перфоратор Bosch BFG 6000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -334,7 +323,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 6000
@@ -349,11 +337,10 @@
                 </div>
               </li>
               <li class="product-item" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-2k3k.jpg" alt="Перфоратор Bosch BFG 2000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -362,7 +349,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 2000
@@ -376,11 +362,10 @@
                 </div>
               </li>
               <li class="product-item new-flag" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-2k3k.jpg" alt="Перфоратор Bosch BFG 3000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -389,7 +374,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 3000
@@ -404,11 +388,10 @@
                 </div>
               </li>
               <li class="product-item" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-6k.jpg" alt="Перфоратор Bosch BFG 6000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -417,7 +400,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 6000
@@ -432,11 +414,10 @@
                 </div>
               </li>
               <li class="product-item" tabindex="0">
-                <div>
+                <div class="product-item-inner">
                   <a class="product-picture" href="catalog-item.html">
                     <img src="img/item-image-2k3k.jpg" alt="Перфоратор Bosch BFG 2000" width="218" height="170">
                   </a>
-
                   <ul class="item-buttons-list">
                     <li class="item-button">
                       <a class="button-link button-to-cart" href="to-cart.html">Купить</a>
@@ -445,7 +426,6 @@
                       <a class="button-link button-to-mark" href="add-mark.html">В закладки</a>
                     </li>
                   </ul>
-
                   <h4 class="product-title">
                     <a href="product-item.html">
                       Перфоратор BOSCH BFG 2000
@@ -493,7 +473,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="footer-top">
-        <a class="logo footer-logo" href="">
+        <a class="logo footer-logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип магазана Техномарт" width="138" height="23">
         </a>
         <ul class="footer-top-nav-list">
@@ -563,6 +543,6 @@
       <button class="next-close">Продолжить покупки</button>
     </div>
   </section>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

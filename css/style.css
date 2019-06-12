@@ -425,6 +425,7 @@ a.header-top-cart {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 
   width: 60px;
   height: 59px;
@@ -541,9 +542,6 @@ a.header-top-cart {
   min-height: 266px;
 }
 
-/* .widget-nav {
-  z-index: 1;
-} */
 .back-arrow {
   position: absolute;
   top: 50%;
@@ -784,14 +782,9 @@ a.header-top-cart {
   text-align: center;
 }
 
-/* .popular-products-list {
-  margin: 0 0 20px 0;
-  padding: 0;
-  display: flex;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: bold;
-} */
 .product-item {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,23 +805,23 @@ a.header-top-cart {
   border: 1px solid #eaeaea;
 }
 
-.product-item:hover .product-picture,
-.product-item:focus .product-picture {
-  display: none;
-}
-
 .product-item:hover .item-buttons-list,
 .product-item:focus .item-buttons-list {
   display: block;
 }
 
 .item-buttons-list {
+  position: absolute;
+  top: 0;
+
   display: none;
   width: 218px;
   margin: 0;
   padding: 45px 0 44px 0;
 
   list-style: none;
+
+  background-color: #ffffff;
 }
 
 .item-button {
@@ -981,6 +974,9 @@ a.header-top-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 218px;
   height: 143px;
 
@@ -992,6 +988,17 @@ a.header-top-cart {
 }
 
 .brands-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
   margin: auto;
 }
 
@@ -2699,6 +2706,36 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+/* IE */
+.product-item-inner {
+  width: 100%;
+}
+
+.content-container {
+  width: 700px;
+}
+
+.sort-title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.product-bottom-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .fixme-1::before {
