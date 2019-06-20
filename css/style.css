@@ -15,10 +15,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .visually-hidden {
   position: absolute;
 
@@ -81,7 +83,7 @@ img {
 .search {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 11px;
   left: 17px;
 
   width: 17px;
@@ -136,7 +138,7 @@ input:focus + .search {
 }
 
 .header-top .logo {
-  padding: 15px 56px 7px 55px;
+  padding: 12px 56px 7px 55px;
 
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
@@ -144,7 +146,7 @@ input:focus + .search {
 }
 
 .header-top a {
-  padding: 14px 30px 13px 44px;
+  padding: 11px 30px 13px 44px;
 
   font-size: 17px;
   line-height: 18px;
@@ -154,7 +156,7 @@ input:focus + .search {
 
 .pack {
   position: absolute;
-  top: 14px;
+  top: 11px;
   left: 16px;
 
   width: 14px;
@@ -183,7 +185,7 @@ a.header-top-pack {
 }
 
 a.header-top-to-cart {
-  padding: 14px 22px 13px 20px;
+  padding: 11px 22px 13px 20px;
 
   background-color: #63a63e;
 }
@@ -203,7 +205,7 @@ a.header-top-cart {
 
 .cart {
   position: absolute;
-  top: 14px;
+  top: 11px;
   left: 12px;
 
   width: 15px;
@@ -610,6 +612,7 @@ a.header-top-cart {
   position: absolute;
   bottom: 34px;
   left: 50%;
+  z-index: 1;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -930,7 +933,7 @@ a.header-top-cart {
 
   display: block;
   margin-bottom: 20px;
-  margin-left: -10px;
+  margin-left: -9px;
   padding: 10px 22px 10px 33px;
 
   font-size: 17px;
@@ -975,8 +978,8 @@ a.header-top-cart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 218px;
   height: 143px;
 
@@ -992,11 +995,11 @@ a.header-top-cart {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   margin: auto;
@@ -2566,6 +2569,7 @@ legend {
   margin-right: 20px;
   padding: 10px;
 
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -2718,8 +2722,8 @@ legend {
 
 .sort-title {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .product-bottom-inner {
@@ -2731,11 +2735,11 @@ legend {
   flex-grow: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .fixme-1::before {

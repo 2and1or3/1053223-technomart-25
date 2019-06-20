@@ -103,7 +103,6 @@ if (popupLetter) {
 }
 // catalog-cart
 if (popupCart) {
-
   for (var i = 0; i < linkCart.length; i++) {
     linkCart[i].addEventListener("click", function(evt) {
       evt.preventDefault();
@@ -128,7 +127,6 @@ if (popupCart) {
       }
     }
   });
-
 }
 //index-map
 if (popupMap) {
@@ -211,7 +209,6 @@ if (sliderMenu) {
   for (var j = 0; j < btnCircleList.length; j++) {
     getElement(j);
   }
-
 }
 //slider-2
 if (sliderFeatures) {
